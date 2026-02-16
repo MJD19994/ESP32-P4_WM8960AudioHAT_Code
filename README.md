@@ -101,7 +101,7 @@ WM8960_Example.c
 |------------------|---------|------------------------------------------|
 | Sample Rate      | 44100 Hz| CD-quality audio                         |
 | Bit Depth        | 16-bit  | Standard audio resolution                |
-| I2S Format       | Philips | Standard I2S format (FORMAT=10)          |
+| I2S Format       | Philips | Standard I2S format (Register 0x07 bits [1:0] = 0b10) |
 | I2C Frequency    | 100 kHz | Standard mode I2C                        |
 | PLL Mode         | Enabled | Internal PLL for clock generation        |
 
