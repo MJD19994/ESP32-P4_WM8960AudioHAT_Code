@@ -39,6 +39,11 @@ The ESP32-P4 acts as the I2S master, generating BCLK and LRCLK clocks, while the
 - VS Code with ESP-IDF extension (recommended) or command line tools
 - WM8960 ESP-IDF component/driver
 
+## Issue Before It Will work
+
+Most WM8960 Audio HATs use the same pins, I2S_DAC would be GPIO 45 but I ran into issues using that pin, my solution was to jump I2S_DAC to a different GPIO, which in this case ended up being GPIO 6.
+You can solder a jumper wire or use a female dupont cable if your HAT has extended headers. No other modifications are needed.
+
 ## Project Setup
 
 ### 1. Install ESP-IDF
